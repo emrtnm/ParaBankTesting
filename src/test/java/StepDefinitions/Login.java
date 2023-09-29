@@ -24,6 +24,6 @@ public class Login {
 
     @Then("I should login with successfully")
     public void iShouldLoginWithSuccessfully() {
-        Events.verifyContainsText(elements.resultMsg, "adasd");
+        Events.verifyContainsText(elements.resultMsg, "Welcome");
     }
 }
