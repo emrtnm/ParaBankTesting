@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPom {
+public class LoginPom extends Parent{
     public LoginPom() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
