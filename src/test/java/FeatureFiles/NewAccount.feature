@@ -12,7 +12,3 @@ Feature: New Account Functionality
       And Select one of the account from the options
       Then Click open new account button
       And Verify confirmation message and new account number
-
-
-
-
