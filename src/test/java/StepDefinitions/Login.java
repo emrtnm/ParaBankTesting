@@ -12,7 +12,7 @@ public class Login {
 
     @Given("Navigate to website")
     public void navigateToWebsite() {
-        GWD.getDriver().navigate().to("https://para.testar.org/parabank/index.htm");
+        GWD.getDriver().navigate().to("https://parabank.parasoft.com/parabank/index.htm");
     }
 
     @And("Enter username and password and click login button")

@@ -1,8 +1,8 @@
 # ParaBankTesting
 
-Techno Study Batch 4 Group 5 Friday Project. We use JAVA and Test Tools on this project.
+Techno Study Batch 4 Group 5 Friday Project. We use JAVA, TestNG, Cucumber, Gherkin and other JAVA Tools on this project.
 
-Domain: https://para.testar.org
+Domain: https://parabank.parasoft.com
 
 ## Team
 - 🔥 Emrullah Tanıma - QA Lead
@@ -38,12 +38,15 @@ Click to Runners > ExtentReport
 List of Dependencies
 ----------------
 
-| Package    | Description                             |
-|------------|-----------------------------------------|
-| TestNG     | Next Generation Testing Tool.           |
-| Selenium   | Browser Automation Framework.           |
-| slf4j      | The Simple Logging Facade for Java.     |
-| commons.io | The Apache Commons IO library           |
+| Package      | Description                           |
+|--------------|---------------------------------------|
+| TestNG       | Next Generation Testing Tool.         |
+| Selenium     | Browser Automation Framework.         |
+| slf4j        | The Simple Logging Facade for Java.   |
+| commons.io   | The Apache Commons IO library.        |
+| cucumber     | Cucumber is a tool that supports BDD. |
+| grasshopper  | HTML & PDF Report tool.               |
+
 
 ## Rules Of Pull Request
 - Update your codes from main branch before you pull request
