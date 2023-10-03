@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public class NewAccountPom {
-
     public NewAccountPom(){
         PageFactory.initElements(GWD.getDriver(),this);
     }

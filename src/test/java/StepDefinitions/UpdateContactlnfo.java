@@ -12,23 +12,18 @@ import java.util.List;
 public class UpdateContactlnfo {
     UpdateContactlnfoPom elements = new UpdateContactlnfoPom();
 
-
     @And("Click  the buttons UpdateContactlnfo")
     public void clickTheButtonsUpdateContactlnfo(DataTable buttons) {
-
         List<String> strButtonsList = buttons.asList(String.class);
 
         for (int i = 0; i < strButtonsList.size(); i++) {
             WebElement linkWebElement = elements.getWebelement(strButtonsList.get(i));
             Events.click(linkWebElement);
-
-
         }
     }
 
     @And("Write sendkeys user informations UpdateContactlnfo")
     public void writeSendkeysUserInformationsUpdateContactlnfo(DataTable keys) {
-
         List<List<String>> items = keys.asLists(String.class);
 
         for (int i = 0; i < items.size(); i++) {
@@ -36,14 +31,11 @@ public class UpdateContactlnfo {
             String yazi = items.get(i).get(1);
 
             Events.sendKeys(e, yazi);
-
-
         }
     }
 
     @And("Clear and user informations UpdateContactlnfo")
     public void clearAndUserInformationsUpdateContactlnfo(DataTable delet) {
-
         List<String> strButtonsList = delet.asList(String.class);
 
         for (int i = 0; i < strButtonsList.size(); i++) {

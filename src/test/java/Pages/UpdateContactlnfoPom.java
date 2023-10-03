@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class UpdateContactlnfoPom {
-
     public UpdateContactlnfoPom() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
@@ -35,7 +34,6 @@ public class UpdateContactlnfoPom {
     @FindBy(css = "p[class='smallText']")
     public WebElement smallText;
 
-
     @FindBy(xpath = "//div[@class='ng-scope']")
     public WebElement succassesMessage;
     @FindBy(xpath = "//a[text()='Update Contact Info']")
@@ -47,32 +45,27 @@ public class UpdateContactlnfoPom {
     @FindBy(css="[class='error ng-scope']")
     public WebElement errorMessage;
 
-
     public WebElement getWebelement(String strElement) {
         switch (strElement) {
-
             case "clickButton": return this.updateContactInfo;
-            case  "name": return this.FirstName;
-            case  "surName": return this.LastName;
+            case "name": return this.FirstName;
+            case "surName": return this.LastName;
             case "address":return this.Address;
             case "city": return this.City;
             case "state":return this.State;
             case "zipcod":return this.ZipCode;
             case "phone": return this.phoneNumber;
             case "firstname": return this.FirstName;
-            case  "lastName":return this.LastName;
-            case  "Address" :  return this.Address;
+            case "lastName":return this.LastName;
+            case "Address" :  return this.Address;
             case "cty":   return this.City;
-            case  "State": return  this.State;
-            case  "zipcode" : return this.ZipCode;
-            case  "phoneNumber": return  this.phoneNumber;
-            case  "updateButton": return this.updateButton;
+            case "State": return  this.State;
+            case "zipcode" : return this.ZipCode;
+            case "phoneNumber": return  this.phoneNumber;
+            case "updateButton": return this.updateButton;
             case "logout": return this.logout;
-
         }
 
         return null;
     }
-
-
 }

@@ -26,4 +26,16 @@ public class Login {
     public void iShouldLoginWithSuccessfully() {
         Events.verifyContainsText(elements.resultMsg, "Welcome");
     }
+
+    @And("Enter {string} as username and {string} as password and click login button")
+    public void enterAsUsernameAndAsPasswordAndClickLoginButton(String username, String password) {
+        Events.sendKeys(elements.username, username);
+        Events.sendKeys(elements.password, password);
+        Events.jsClick(elements.loginBtn);
+    }
+
+    @Then("User should see the error message")
+    public void userShouldSeeTheErrorMessage() {
+        Events.verifyContainsText(elements.errorMsg, "Error");
+    }
 }

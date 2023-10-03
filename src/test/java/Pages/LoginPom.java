@@ -21,4 +21,7 @@ public class LoginPom {
 
     @FindBy(xpath = "//b[text()='Welcome']")
     public WebElement resultMsg;
+
+    @FindBy(xpath = "//h1[@class='title']")
+    public WebElement errorMsg;
 }
