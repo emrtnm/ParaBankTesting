@@ -6,9 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPom {
-    public LoginPom() {
-        PageFactory.initElements(GWD.getDriver(), this);
-    }
+    public LoginPom() { org.openqa.selenium.support.PageFactory.initElements(GWD.getDriver(),this); }
 
     @FindBy(name = "username")
     public WebElement username;
@@ -24,4 +22,7 @@ public class LoginPom {
 
     @FindBy(xpath = "//h1[@class='title']")
     public WebElement errorMsg;
+
+    private class PageFactory {
+    }
 }
