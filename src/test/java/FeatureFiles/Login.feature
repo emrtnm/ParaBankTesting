@@ -11,6 +11,6 @@ Feature: Login Functionality
       Examples:
         | username | password       |
         |           |               |
-        | acabbar   |  123456       |
+        | qa   |  123456       |
         | admin     | alicabbar1234 |
         | asdsad*0  | asdasdasdad   |

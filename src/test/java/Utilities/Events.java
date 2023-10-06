@@ -19,7 +19,7 @@ public class Events {
 
     public static void jsClick(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) GWD.getDriver();
-        js.executeScript("arguments[0].click();", element);
+        js.executeScript ("arguments[0].click();", element);
     }
 
     public static void scrollToElement(WebElement element) {
