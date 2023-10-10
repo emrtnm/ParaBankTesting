@@ -1,6 +1,6 @@
 Feature: Transfer Funds Functionality
 
-  Background:  logın and newAccount
+  Background:  Login and newAccount
     Given Navigate to website
     And Enter username and password and click login button
     Then I should login with successfully
@@ -12,7 +12,7 @@ Feature: Transfer Funds Functionality
     Then Click open new account button
     And Verify confirmation message and new account number
 
-  Scenario:Transfer Funds
+  Scenario: Transfer Funds
     Given The user must come to the transfer Funds transaction page
     When The user must complete the Transfer Fund transaction
     Then User must verify Transfer Fund transaction

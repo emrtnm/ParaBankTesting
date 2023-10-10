@@ -9,11 +9,11 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class UpdateContactlnfo {
+public class UpdateContactInfo {
     UpdateContactlnfoPom elements = new UpdateContactlnfoPom();
 
-    @And("Click  the buttons UpdateContactlnfo")
-    public void clickTheButtonsUpdateContactlnfo(DataTable buttons) {
+    @And("Click  the buttons UpdateContactInfo")
+    public void clickTheButtonsUpdateContactInfo(DataTable buttons) {
         List<String> strButtonsList = buttons.asList(String.class);
 
         for (int i = 0; i < strButtonsList.size(); i++) {
@@ -22,8 +22,8 @@ public class UpdateContactlnfo {
         }
     }
 
-    @And("Write sendkeys user informations UpdateContactlnfo")
-    public void writeSendkeysUserInformationsUpdateContactlnfo(DataTable keys) {
+    @And("Write sendkeys user informations UpdateContactInfo")
+    public void writeSendkeysUserInformationsUpdateContactInfo(DataTable keys) {
         List<List<String>> items = keys.asLists(String.class);
 
         for (int i = 0; i < items.size(); i++) {
@@ -34,7 +34,7 @@ public class UpdateContactlnfo {
         }
     }
 
-    @And("Clear and user informations UpdateContactlnfo")
+    @And("Clear and user informations UpdateContactInfo")
     public void clearAndUserInformationsUpdateContactlnfo(DataTable delet) {
         List<String> strButtonsList = delet.asList(String.class);
 

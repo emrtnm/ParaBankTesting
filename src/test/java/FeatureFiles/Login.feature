@@ -9,8 +9,8 @@ Feature: Login Functionality
       And Enter "<username>" as username and "<password>" as password and click login button
       Then User should see the error message
       Examples:
-        | username | password       |
-        |           |               |
-        | qa   |  123456       |
-        | admin     | alicabbar1234 |
-        | asdsad*0  | asdasdasdad   |
+        | username  | password       |
+        |           |                |
+        | qa        |  123456        |
+        | admin     | alicabbar1234  |
+        | asdsad*0  | asdasdasdad    |

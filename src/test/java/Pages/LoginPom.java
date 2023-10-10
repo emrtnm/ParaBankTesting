@@ -22,7 +22,4 @@ public class LoginPom {
 
     @FindBy(xpath = "//h1[@class='title']")
     public WebElement errorMsg;
-
-    private class PageFactory {
-    }
 }

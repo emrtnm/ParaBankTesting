@@ -14,7 +14,6 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class NewAccount {
-
     AccountServices as = new AccountServices();
     NewAccountPom nap = new NewAccountPom();
 

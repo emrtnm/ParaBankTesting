@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class TransferFundsPom {
-
     public TransferFundsPom(){
         PageFactory.initElements(GWD.getDriver(),this);
     }
@@ -28,6 +27,4 @@ public class TransferFundsPom {
     public WebElement sentAccount;
     @FindBy(xpath = "//table[@id=\"transactionTable\"]/tbody/tr[5]/td[4]")
     public WebElement amountSent;
-
-
 }

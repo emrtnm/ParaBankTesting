@@ -10,7 +10,7 @@ import io.cucumber.java.en.When;
 
 public class TransferFunds {
     AccountServices as = new AccountServices();
-    TransferFundsPom tfp=new TransferFundsPom();
+    TransferFundsPom tfp = new TransferFundsPom();
 
     @Given("The user must come to the transfer Funds transaction page")
     public void theUserMustComeToTheTransferFundsTransactionPage() {
