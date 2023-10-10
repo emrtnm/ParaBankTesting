@@ -89,19 +89,16 @@ List of Dependencies
 - Don't use Turkish Character
 - Don't use extra space
 - Use logical comment lines
-- Use ./screenshots folder for bug & facility report
-- Only work at your story
-- Don't add any scenario you want
 - Try to have fun ;)
 
 ## Team
-- 🔥 Emrullah Tanıma - Team Lead
-- 🔥 Samet Çamoğlu - Tester
-- 🔥 Ümit Boyraz - Tester
-- 🔥 Selen Dilek - Tester
-- 🔥 Rustam Roz - Tester
-- 🔥 Umut Can Güzel - Tester
-- 🔥 Yakup Yüce - Tester
+- Emrullah Tanıma - Team Lead 
+- Samet Çamoğlu - Tester
+- Ümit Boyraz - Tester
+- Selen Dilek - Tester
+- Rustam Roz - Tester
+- Umut Can Güzel - Tester
+- Yakup Yüce - Tester
 
 ## License
 
