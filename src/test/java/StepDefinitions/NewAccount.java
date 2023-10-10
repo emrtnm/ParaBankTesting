@@ -25,8 +25,8 @@ public class NewAccount {
     @And("Verify the page, account types existing in the options")
     public void verifyThePageAccountTypesExistingInTheOptions() {
         Assert.assertTrue(GWD.getDriver().getCurrentUrl().toLowerCase().contains("https://para.testar.org/parabank/openaccount.htm"));
-        Assert.assertTrue(nap.accountTypes.get(0).getText().contains("CHECKING"));
-        Assert.assertTrue(nap.accountTypes.get(1).getText().contains("SAVINGS"));
+        Events.verifyContainsText(nap.accountTypes.get(0),"CHECKING" );
+        Events.verifyContainsText(nap.accountTypes.get(1),"SAVINGS" );
     }
 
     @And("Select one of the account types in the options")
