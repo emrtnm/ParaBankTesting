@@ -1,5 +1,7 @@
 package Utilities;
 
+import gherkin.lexer.Fi;
+import org.checkerframework.checker.units.qual.C;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -12,17 +14,18 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class GWD {
-    private static final ThreadLocal<WebDriver> threadDriver=new ThreadLocal<>();
+    private static final ThreadLocal<WebDriver> threadDriver = new ThreadLocal<>();
 
-    public static ThreadLocal<String> threadBrowserName=new ThreadLocal<>();
+    public static ThreadLocal<String> threadBrowserName = new ThreadLocal<>();
 
     public static WebDriver driver;
 
     public static WebDriverWait wait;
 
     public static WebDriver getDriver() {
-        if (threadBrowserName.get() == null)
+        if (threadBrowserName.get() == null) {
             threadBrowserName.set("chrome");
+        }
 
         if (threadDriver.get() == null) {
             switch (threadBrowserName.get()){
