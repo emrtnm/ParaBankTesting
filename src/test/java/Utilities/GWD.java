@@ -26,7 +26,7 @@ public class GWD {
         }
 
         if (threadDriver.get() == null) {
-            switch (threadBrowserName.get()){
+            switch (threadBrowserName.get()) {
                 case "firefox":
                     threadDriver.set(new FirefoxDriver());
                     break;
